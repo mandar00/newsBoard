@@ -18,9 +18,12 @@ export default {
 				'custom-light1-purple': '#F2EFFF',
 				'custom-light2-purple': '#8F81CE',
 				'custom-light3-purple': '#FCFBFF',
-				'custom-light1-yellow': '#FFFDF9',
 				'custom-dark1-purple': '#40347D',
+				'custom-light1-yellow': '#FFFDF9',
+				'custom-dark1-yellow': '#E3960082',
+				'custom-dark2-yellow': '#E0AD4C',
 				'custom-dark1-blue': '#02234D',
+				'custom-light1-gray': '#B4B7C1',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

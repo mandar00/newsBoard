@@ -3,7 +3,8 @@ import rightArrow from "@/assets/rightArrow.svg";
 import Card from "@/components/serverComponents/Card/Card";
 import Markdown from "@/components/Markdown";
 import Link from "next/link";
-
+import { dummyCardData } from "../data/dummyCardData";
+import { truncateString } from "@/lib/stringUtils";
 
 const subMenuNavigation = [
   "All News",
@@ -15,7 +16,6 @@ const subMenuNavigation = [
 export default function Home() {
   return (
     <div className="px-[6.3vw] py-[32px] bg-custom-light3-purple">
-
       {/* Sub Menue Section */}
       <section className=" hidden md:flex  ">
         <nav className="w-full h-[28px] flex items-center justify-between">
@@ -72,7 +72,9 @@ export default function Home() {
                 Maharashtra, has issued the admit cards for the March, MHMCT,
                 BEd, MEd, and....
               </Markdown>
-              <Link className="text-custom-dark1-purple font-bold" href="/">READ</Link>
+              <Link className="text-custom-dark1-purple font-bold" href="/">
+                READ
+              </Link>
             </span>
           </Card.Description>
         </Card>
@@ -81,10 +83,22 @@ export default function Home() {
       </main>
 
       {/* Featured Section */}
-      <div className="lg:mt-[54px]">
-        
+      <div className="lg:mt-[54px] p-[24px] border-solid border-custom-dark1-yellow border-2 rounded-md bg-custom-light1-yellow">
+        <i className="text-custom-dark2-yellow lg:text-[20px]">FEATURED NEWS</i>
+        <div className="flex  justify-evenly">
+          {dummyCardData.map((card, cardIndex) => {
+            return (
+              <Card key={cardIndex} className=" w-[284px] pr-3 ">
+                <Card.Title className="text-[14px] font-bold" title={truncateString(card.title,39)} />
+                <Card.Description className="text-[12px] font-sans">
+                    <Markdown>{truncateString(card.description,40)}</Markdown>
+                </Card.Description>
+                <Card.DateTime className="text-[11px] w-full text-custom-light1-gray " dateTime={new Date()} />
+              </Card>
+            );
+          })}
+        </div>
       </div>
-
     </div>
   );
 }
