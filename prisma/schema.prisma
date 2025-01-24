@@ -16,12 +16,13 @@ datasource db {
 }
 
 model News {
-  id          Int    @id @default(autoincrement())
-  slug        String @unique
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
   title       String
   type        String
   description String
   imageURL    String
+  createdAt   DateTime @default(now())
 
   @@map("news") // the table name in sql database will be jobs as sql table name is in lowercase
 }
