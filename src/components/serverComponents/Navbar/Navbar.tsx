@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/logo.png";
 import NavbarSearch from "@/components/serverComponents/Navbar/NavbarSearch";
-import NavbarLinksContainer from "../NavbarLinksContainer";
+import NavbarLinksContainer from "./NavbarLinksContainer";
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
             <Link href="/">
               <Image width={98} height={24} src={logo} alt="Logo" />
             </Link>
-            <NavbarLinksContainer className="w-[496px] h-[21px]"/>
+            <NavbarLinksContainer className="md:w-[306px] lg:w-[496px] h-[21px]"/>
           </div>
           <NavbarSearch />
         </nav>

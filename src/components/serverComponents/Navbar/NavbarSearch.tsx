@@ -13,7 +13,7 @@ const NavbarSearch = () => {
         height={20}
       />
       <Input
-        className=" hidden focus-visible:ring-0 border-none shadow-none placeholder:text-[14px] md:flex"
+        className=" hidden focus-visible:ring-0 border-none shadow-none lg:placeholder:text-[14px] md:placeholder:text-[12px]  md:flex"
         id="q"
         name="q"
         placeholder="Search for Colleges Exams Courses and More..."

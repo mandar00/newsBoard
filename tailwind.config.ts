@@ -9,7 +9,18 @@ export default {
   ],
   theme: {
   	extend: {
+			backgroundImage: {
+        // Add custom gradients here
+        'custom-purple-gradient1':  'linear-gradient(180deg, #F5F3FF 0%, #FFFFFF 100%)',
+      },
   		colors: {
+				'custom-light-purple': 'linear-gradient(147.14deg, #DCD4FF 19.62%, #FFFFFF 39.25%)',
+				'custom-light1-purple': '#F2EFFF',
+				'custom-light2-purple': '#8F81CE',
+				'custom-light3-purple': '#FCFBFF',
+				'custom-light1-yellow': '#FFFDF9',
+				'custom-dark1-purple': '#40347D',
+				'custom-dark1-blue': '#02234D',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
