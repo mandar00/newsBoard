@@ -6,7 +6,13 @@ import NewsSidebar from "../(components)/NewsSidebar";
 import { dummyCardData } from "@/data/dummyCardData";
 import { News as NewsConfig } from "@prisma/client";
 import NewsActionBtnGroup from "./NewActionBtnGroup";
+import { Metadata } from "next";
 
+interface IndividualNewsProps {
+  params: {
+    slug: string;
+  };
+}
 const getNews = cache(async (slug: string) => {
   const news = await prisma.news.findUnique({
     where: { slug: decodeURIComponent(slug) },
@@ -17,11 +23,30 @@ const getNews = cache(async (slug: string) => {
   return news;
 });
 
-interface IndividualNewsProps {
-  params: {
-    slug: string;
+
+// cache existing pages 
+// ?? facing issues here skipping  for now due to time constraits
+// export async function generateStaticParams() {
+//   const news = await prisma.news.findMany({
+//     where: {}, // Ensure no empty slugs
+//     select: { slug: true },
+//   });
+//   console.log(news)
+//   return news
+//     .filter((item) => item?.slug) // Ensure 'slug' exists and is truthy
+//     .map(({ slug }) => slug);}
+
+export async function generateMetadata({
+  params: { slug },
+}: IndividualNewsProps): Promise<Metadata> {
+  const news = await getNews(slug);
+
+  return {
+    title: news.title,
   };
 }
+
+
 
 export default async function IndividualNews({ params }: IndividualNewsProps) {
   const { slug } = await params;

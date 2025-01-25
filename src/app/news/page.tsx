@@ -11,7 +11,14 @@ import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
 import NewsSidebar from "./(components)/NewsSidebar";
 import { News as NewsConfig } from "@prisma/client";
+import { Metadata } from "next";
 
+
+export function generateMetadata(): Metadata {
+  return {
+    title: `News | KollegeApply`,
+  };
+}
 
 export default function News() {
   return (
