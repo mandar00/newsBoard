@@ -1,5 +1,0 @@
-{
-  "functions": {
-    "includeFiles": ["prisma/**", "node_modules/.prisma/**"]
-  }
-}
