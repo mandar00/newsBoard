@@ -15,19 +15,19 @@ const NavbarLinksContainer = ({ className }: NavbarLinksContainerProps) => {
           className
         )}
       >
-        <Link className="flex items-center md:gap-1 gap-0" href="/">
+        <Link className="flex items-center md:gap-1 gap-0" href="/news">
           University <ChevronDown className="lg:h-4 lg:w-4 md:h-2 md:w-2" />
         </Link>
-        <Link className="flex items-center md:gap-1 gap-0 " href="/">
+        <Link className="flex items-center md:gap-1 gap-0 " href="/news">
           College <ChevronDown className="lg:h-4 lg:w-4 md:h-2 md:w-2" />
         </Link>
-        <Link className="flex items-center md:gap-1 gap-0" href="/">
+        <Link className="flex items-center md:gap-1 gap-0" href="/news">
           Exams <ChevronDown className="lg:h-4 lg:w-4 md:h-2 md:w-2" />
         </Link>
-        <Link className="flex items-center md:gap-1 gap-0" href="/">
+        <Link className="flex items-center md:gap-1 gap-0" href="/news">
           Cources <ChevronDown className="lg:h-4 lg:w-4 md:h-2 md:w-2" />
         </Link>
-        <Link className="flex items-center md:gap-1 gap-0" href="/">
+        <Link className="flex items-center md:gap-1 gap-0" href="/news">
           News <ChevronDown className="lg:h-4 lg:w-4 md:h-2 md:w-2" />
         </Link>
       </div>
