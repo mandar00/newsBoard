@@ -8,6 +8,8 @@ import Card from "@/components/serverComponents/Card/Card";
 import { truncateString } from "@/lib/stringUtils";
 import Markdown from "@/components/Markdown";
 import { Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const NewsTab = () => {
   const [tabsSectionData, setTabsSectionData] = useState<News[] | undefined>(
@@ -47,17 +49,15 @@ const NewsTab = () => {
         lg:py-[24px] md:py-[18px] py-[15px]"
           handleTabChange={getNews}
         >
-          {loading ? (
-            // TODO implement a loading overlay to contnet shift
-            <Loader2 className="animate-spin m-auto mt-5  w-[5vw]" />
-          ) : (
-            <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-[46px]">
-              {tabsSectionData.map((news, index) => {
-                return (
-                  <Card
-                    className="bg-white rounded-md shadow-md h-[351px] p-[12px] relative"
-                    key={index}
-                  >
+          {/* // TODO implement a loading overlay to contnet shift */}
+          <div className={cn(loading ? "visible" : "hidden")}>
+            <Loader2 className={cn("animate-spin m-auto w-[5vw]")} />
+          </div>
+          <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-[46px]">
+            {tabsSectionData.map((news, index) => {
+              return (
+                <Link href={`/news/${news.slug}`} key={index}>
+                  <Card className="bg-white rounded-md shadow-md h-[351px] p-[12px] relative">
                     <Card.Image
                       src={news.imageURL}
                       alt={news.title}
@@ -68,19 +68,17 @@ const NewsTab = () => {
                       title={truncateString(news.title, 45)}
                     />
                     <Card.Description className=" text-[13px]  font-sans">
-                      <Markdown>
-                        {truncateString(news.description, 40)}
-                      </Markdown>
+                      {truncateString(news.description, 40)}
                     </Card.Description>
                     <Card.DateTime
                       className="absolute bottom-3 text-[11px] w-full text-custom-light1-gray "
                       dateTime={news.createdAt}
                     />{" "}
                   </Card>
-                );
-              })}
-            </div>
-          )}
+                </Link>
+              );
+            })}
+          </div>
         </Tabs>
       )}
     </>

@@ -5,13 +5,18 @@ import Markdown from "@/components/Markdown";
 import Link from "next/link";
 import { dummyCardData } from "@/data/dummyCardData";
 import { truncateString } from "@/lib/stringUtils";
-import NewsTab from "@/app/news/components/NewsTab";
+import NewsTab from "@/app/news/(components)/NewsTab";
 import { subMenuNavigation } from "@/app/news/constants";
+import { Suspense } from "react";
+import { Loader2 } from "lucide-react";
+import NewsSidebar from "./(components)/NewsSidebar";
+import { News as NewsConfig } from "@prisma/client";
+
 
 export default function News() {
   return (
-    <>
-      <div className="px-[6.3vw] py-[32px] bg-custom-light3-purple">
+    <div>
+      <div className="px-[6.3vw] py-[99px] bg-custom-light3-purple">
         {/* Sub Menue Section */}
         <section className=" hidden md:flex  ">
           <nav className="w-full h-[28px] flex items-center justify-between">
@@ -45,8 +50,8 @@ export default function News() {
     Hardcoding to hero section for now
     can be fetched using a different endpoint later
    */}
-        <main className="flex items-center justify-between md:mt-[32px] mt-[15px]">
-          <Card className="w-full md:w-[70%] lg:h-[721px] md:h-[550px] h-[400px] py-5 rounded-md shadow-md bg-white box-content ">
+        <main className="flex items-start justify-between md:mt-[32px] mt-[15px]">
+          <Card className="w-full md:w-[52.5vw] lg:h-[721px] md:h-[550px] h-[400px] py-5 rounded-md shadow-md bg-white ">
             <Card.Image
               src="https://0ivjzaofksjyombd.public.blob.vercel-storage.com/college1-q0edBTQoiG1OeBztSgNegB51mwX8MU.png"
               alt="hero-banner"
@@ -68,14 +73,20 @@ export default function News() {
                   Maharashtra, has issued the admit cards for the March, MHMCT,
                   BEd, MEd, and....
                 </Markdown>
-                <Link className="text-custom-dark1-purple font-bold" href="/">
+                {/* hardcoding for now */}
+                <Link className="text-custom-dark1-purple font-bold" href="/news/BITS_Pilani_Expands_International_Programs_for_2025_Admissions">
                   READ
                 </Link>
               </span>
             </Card.Description>
           </Card>
 
-          <aside className=" hidden md:flex w-[25%] bg-black">s</aside>
+          <aside className=" hidden md:flex w-[28vw] lg:h-[721px] md:h-[550px]">
+          <NewsSidebar
+            title="THE BIG STORIES"
+            news={dummyCardData as NewsConfig[]}
+          />
+          </aside>
         </main>
 
         {/* Featured Section */}
@@ -92,7 +103,7 @@ export default function News() {
                     title={truncateString(card.title, 45)}
                   />
                   <Card.Description className="lg:text-[12px] text-[10px]  font-sans">
-                    <Markdown>{truncateString(card.description, 40)}</Markdown>
+                    {truncateString(card.description, 40)}
                   </Card.Description>
                   <Card.DateTime
                     className="text-[11px] w-full text-custom-light1-gray "
@@ -105,8 +116,10 @@ export default function News() {
         </div>
       </div>
       <div className="px-[6.3vw] py-[45px] bg-custom-purple-gradient1">
-        <NewsTab />
+        <Suspense fallback={<Loader2 className="animate-spin m-auto w-[5vw]" />}>
+          <NewsTab />
+        </Suspense>
       </div>
-    </>
+    </div>
   );
 }

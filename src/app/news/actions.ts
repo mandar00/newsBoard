@@ -1,8 +1,9 @@
 'use server'
 import prisma from "@/lib/prisma";
+import { cache } from "react";
 
 
-export const fetchNews = async (type: string = "") => {
+export const fetchNews = cache(async (type: string = "") => {
 
   // TODO implement cache
   try{    
@@ -15,4 +16,4 @@ export const fetchNews = async (type: string = "") => {
   }
 
 
-}
+})

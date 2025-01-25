@@ -14,6 +14,7 @@ export const dummyCardData = [
     `,
     type: "admission",
     imageURL: "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/college1-q0edBTQoiG1OeBztSgNegB51mwX8MU.png",
+    createdAt:new Date("2025-01-24T03:16:48.280Z")
   },
   {
     title: "Delhi University Introduces New UG Courses; Admissions Open!",
@@ -30,6 +31,7 @@ export const dummyCardData = [
     `,
     type: "admission",
     imageURL: "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
+    createdAt:new Date("2025-01-24T03:16:48.280Z")
   },
   {
     title: "JEE Advanced 2025 Exam Dates Announced; Check Details!",
@@ -46,6 +48,7 @@ export const dummyCardData = [
     `,
     type: "exam",
     imageURL: "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
+    createdAt:new Date("2025-01-24T03:16:48.280Z")
   },
   {
     title: "CBSE Board Exams 2025 Schedule Released; Check Full Timetable!",
@@ -62,5 +65,6 @@ export const dummyCardData = [
     `,
     type: "exam",
     imageURL: "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
+    createdAt:new Date("2025-01-24T03:16:48.280Z")
   },
 ]

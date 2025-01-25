@@ -12,16 +12,21 @@ export default {
 			backgroundImage: {
         // Add custom gradients here
         'custom-purple-gradient1':  'linear-gradient(180deg, #F5F3FF 0%, #FFFFFF 100%)',
+				'custom-purple-gradient2': 'linear-gradient(120.09deg, #FFFFFF 9.94%, #F1EEFE 70.52%);',
+
       },
   		colors: {
 				'custom-light-purple': 'linear-gradient(147.14deg, #DCD4FF 19.62%, #FFFFFF 39.25%)',
 				'custom-light1-purple': '#F2EFFF',
 				'custom-light2-purple': '#8F81CE',
 				'custom-light3-purple': '#FCFBFF',
+				'custom-light4-purple': '#DDC3FFCC',
 				'custom-dark1-purple': '#40347D',
 				'custom-light1-yellow': '#FFFDF9',
+				'custom-light2-yellow': '#FFEEC3CC',
 				'custom-dark1-yellow': '#E3960082',
 				'custom-dark2-yellow': '#E0AD4C',
+				'custom-light1-blue': '#C3D7FFCC',
 				'custom-dark1-blue': '#02234D',
 				'custom-light1-gray': '#B4B7C1',
   			background: 'hsl(var(--background))',
