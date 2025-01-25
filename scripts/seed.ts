@@ -1,4 +1,3 @@
-import { News } from "@prisma/client";
 
 const { placeHolderNews } = require("./placeholderNews");
 const { PrismaClient } = require("@prisma/client");
@@ -6,7 +5,7 @@ const prismaClient = new PrismaClient();
 
 async function main() {
   await Promise.all(
-    placeHolderNews.map(async (news:News) => {
+    placeHolderNews.map(async (news: { slug: string; [key: string]: any }) => {
       await prismaClient.news.upsert({
         where: {
           slug: news.slug,
