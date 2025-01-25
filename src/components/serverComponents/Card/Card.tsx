@@ -60,7 +60,7 @@ Card.DateTime = function CardDateTime({
 }) {
   return (
     <span className={cn("flex items-center justify-start gap-1" ,className)}>
-      <Clock className="w-[1vw] " />
+      <Clock className="md:w-[1.1vw] w-[10px] " />
       <span className="">{relativeDateTime(dateTime, displayTime)}</span>
     </span>
   );
