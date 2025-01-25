@@ -3,7 +3,9 @@ import prisma from "@/lib/prisma";
 
 
 export const fetchNews = async (type: string = "") => {
-  try{
+
+  // TODO implement cache
+  try{    
     const news = await prisma?.news.findMany({
       where: type !== "" ? { type } : {}
     })

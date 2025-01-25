@@ -29,14 +29,12 @@ Card.Image = function CardImage({
 
 Card.Title = function CardTitle({
   title,
-  padAfter = 0,
   className,
 }: {
   title: string;
-  padAfter?: number;
   className?: string;
 }) {
-  return <div className={className}>{title.padEnd(padAfter, ".")}</div>;
+  return <div className={className}>{title}</div>;
 };
 
 Card.Description = function CardDescription({

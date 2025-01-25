@@ -8,7 +8,7 @@ export const subMenuNavigation = [
 
 
 export const tabSectionMenu = [
-  { "title": "All News", "type": "all" },
+  { "title": "All News", "type": "" },
   { "title": "College News", "type": "college" },
   { "title": "Exam News", "type": "exam" },
   { "title": "Admission 2024", "type": "admission" }

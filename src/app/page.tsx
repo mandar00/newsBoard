@@ -45,7 +45,7 @@ export default function Home() {
         Hardcoding to hero section for now
         can be fetched using a different endpoint later
        */}
-        <main className="flex items-center justify-between mt-[32px]">
+        <main className="flex items-center justify-between md:mt-[32px] mt-[15px]">
           <Card className="w-full md:w-[70%] lg:h-[721px] md:h-[550px] h-[400px] py-5 rounded-md shadow-md bg-white box-content ">
             <Card.Image
               src="https://0ivjzaofksjyombd.public.blob.vercel-storage.com/college1-q0edBTQoiG1OeBztSgNegB51mwX8MU.png"
