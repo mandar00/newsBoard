@@ -15,10 +15,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-[![Product Name Screen Shot][mobile2-screenshot]](https://diagnal-app-sigma.vercel.app/)
-[![Product Name Screen Shot][mobile3-screenshot]](https://diagnal-app-sigma.vercel.app/)
-[![Product Name Screen Shot][fullScreen2-screenshot]](https://diagnal-app-sigma.vercel.app/)
-[![Product Name Screen Shot][fullScreen3-screenshot]](https://diagnal-app-sigma.vercel.app/)
+[![Product Name Screen Shot][mobile2-screenshot]]
+[![Product Name Screen Shot][mobile3-screenshot]]
+[![Product Name Screen Shot][fullScreen2-screenshot]]
+[![Product Name Screen Shot][fullScreen3-screenshot]]
 
 <!-- GETTING STARTED -->
 
@@ -35,7 +35,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mandar00/diagnal-app.git
+   git clone https://github.com/mandar00/newsBoard.git
    ```
 2. Install NPM packages
    ```sh
