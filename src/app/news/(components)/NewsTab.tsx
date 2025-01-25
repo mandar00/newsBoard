@@ -3,16 +3,16 @@ import { tabSectionMenu } from "../constants";
 import Tabs from "@/components/clientComponents/Tabs/Tabs";
 import { useEffect, useState } from "react";
 import { fetchNews } from "../actions";
-import { News } from "@prisma/client";
 import Card from "@/components/serverComponents/Card/Card";
 import { truncateString } from "@/utils/stringUtils";
 import Markdown from "@/components/Markdown";
 import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { NewsConfig } from "@/types";
 
 const NewsTab = () => {
-  const [tabsSectionData, setTabsSectionData] = useState<News[] | undefined>(
+  const [tabsSectionData, setTabsSectionData] = useState<NewsConfig[] | undefined>(
     []
   );
   const [loading, setLoading] = useState(false);

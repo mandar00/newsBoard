@@ -4,9 +4,9 @@ import prisma from "@/lib/prisma";
 import Card from "@/components/serverComponents/Card/Card";
 import NewsSidebar from "../(components)/NewsSidebar";
 import { dummyCardData } from "@/data/dummyCardData";
-import { News as NewsConfig } from "@prisma/client";
 import NewsActionBtnGroup from "./NewActionBtnGroup";
 import { Metadata } from "next";
+import { NewsConfig } from "@/types";
 
 /*
   ?? next js 15 has issues due to which the following type changes had to be done

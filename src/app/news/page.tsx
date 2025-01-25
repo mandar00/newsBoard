@@ -10,8 +10,8 @@ import { subMenuNavigation } from "@/app/news/constants";
 import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
 import NewsSidebar from "./(components)/NewsSidebar";
-import { News as NewsConfig } from "@prisma/client";
 import { Metadata } from "next";
+import { NewsConfig } from "@/types";
 
 
 export function generateMetadata(): Metadata {

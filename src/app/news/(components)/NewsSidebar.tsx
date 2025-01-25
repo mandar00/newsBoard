@@ -1,13 +1,13 @@
 import Card from "@/components/serverComponents/Card/Card";
 import { truncateString } from "@/utils/stringUtils";
 import { cn } from "@/lib/utils";
-import { News } from "@prisma/client";
 import Link from "next/link";
+import { NewsConfig } from "@/types";
 
 interface NewsSidebarProps {
   className?: string;
   title: string;
-  news: News[];
+  news: NewsConfig[];
 }
 export default function NewsSidebar({
   className,
