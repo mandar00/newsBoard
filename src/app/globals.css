@@ -82,3 +82,28 @@ body {
       scrollbar-width: none;  /* Firefox */
 }
 }
+.Modal {
+  position: absolute;
+  top: 85px;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 8vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.46);
+-webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.46);
+-moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.46);
+opacity: 1;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 29, 29, 0.313);
+}

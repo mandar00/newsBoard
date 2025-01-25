@@ -7,7 +7,7 @@ import NavbarLinksContainer from "./NavbarLinksContainer";
 const Navbar = () => {
   return (
     <>
-      <header className="shadow-sm">
+      <header className="shadow-md">
         <nav className="flex items-center justify-between w-full fixed z-10 bg-white h-[69px] px-[6.3vw]  ">
           <div className="flex items-center space-x-[32px]">
             <Link href="/">

@@ -1,5 +1,5 @@
 import Card from "@/components/serverComponents/Card/Card";
-import { truncateString } from "@/lib/stringUtils";
+import { truncateString } from "@/utils/stringUtils";
 import { cn } from "@/lib/utils";
 import { News } from "@prisma/client";
 import Link from "next/link";

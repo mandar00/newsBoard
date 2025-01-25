@@ -4,7 +4,7 @@ import Card from "@/components/serverComponents/Card/Card";
 import Markdown from "@/components/Markdown";
 import Link from "next/link";
 import { dummyCardData } from "@/data/dummyCardData";
-import { truncateString } from "@/lib/stringUtils";
+import { truncateString } from "@/utils/stringUtils";
 import NewsTab from "@/app/news/(components)/NewsTab";
 import { subMenuNavigation } from "@/app/news/constants";
 import { Suspense } from "react";
