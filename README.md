@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<a id="readme-top"></a>
+
+
+# KOLLEGEAPPLY NEWS APP
+
+## A News App With Tab Filter and News Search Functionality
+
+
+### Built With
+
+- [![React][React.js]][React-url]
+- [![Typescript][Typescript]][Typescript-url]
+- [![Next][Next.js]][Next-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+[![Product Name Screen Shot][mobile2-screenshot]](https://diagnal-app-sigma.vercel.app/)
+[![Product Name Screen Shot][mobile3-screenshot]](https://diagnal-app-sigma.vercel.app/)
+[![Product Name Screen Shot][fullScreen2-screenshot]](https://diagnal-app-sigma.vercel.app/)
+[![Product Name Screen Shot][fullScreen3-screenshot]](https://diagnal-app-sigma.vercel.app/)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/mandar00/diagnal-app.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Enter your POSTGRESS DATA in `.env.developmnt` and `.env.production`
+   ```js
+    const BASE_URL = "ENTER YOUR API";
+    const POSTGRES_URL="ENTER YOUR POSTGRES_URL";
+    const POSTGRES_URL_NON_POOLING="ENTER YOUR POSTGRES_URL_NON_POOLING";
+    const POSTGRES_USER="ENTER YOUR POSTGRES_USER";
+    const POSTGRES_HOST="ENTER YOUR POSTGRES_HOST";
+    const POSTGRES_PASSWORD="ENTER YOUR POSTGRES_PASSWORD";
+    const POSTGRES_DATABASE="ENTER YOUR POSTGRES_DATABASE";
+    const POSTGRES_URL_NO_SSL="ENTER YOUR POSTGRES_URL_NO_SSL";
+    const POSTGRES_PRISMA_URL="ENTER YOUR POSTGRES_PRISMA_URL";
+    const BLOB_READ_WRITE_TOKEN="ENTER YOUR BLOB_READ_WRITE_TOKEN";
+    const PGHOST="ENTER YOUR PGHOST";
+    const PGHOST_UNPOOLED="ENTER YOUR PGHOST_UNPOOLED";
+    const PGUSER="ENTER YOUR PGUSER";
+    const PGDATABASE="ENTER YOUR PGDATABASE";
+    const PGPASSWORD="ENTER YOUR PGPASSWORD";
+    const DATABASE_URL_UNPOOLED="ENTER YOUR DATABASE_URL_UNPOOLED";
+    const DATABASE_URL="ENTER YOUR DATABASE_URL";
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Start
 
-## Learn More
+- Run project locally
+  ```sh
+  npm run dev
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Typescript]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Typescript-url]: https://www.typescriptlang.org/
+[React.js]: https://img.shields.io/badge/typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[mobile1-screenshot]: src/assets/readme/mobileHome.png
+[mobile2-screenshot]: src/assets/readme/mobileIndividualNews.png
+[mobile3-screenshot]: src/assets/readme/mobileNewsPage.png
+[fullScreen1-screenshot]: src/assets/readme/fullScreenHome.png
+[fullScreen2-screenshot]: src/assets/readme/fullscreenIndivdualPage.png
+[fullScreen3-screenshot]: src/assets/readme/fullScreenNewsPage.png
