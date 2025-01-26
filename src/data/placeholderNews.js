@@ -16,7 +16,8 @@ Cubilia aenean consectetur morbi a odio magna taciti aliquam nunc. Id volutpat n
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/college1-q0edBTQoiG1OeBztSgNegB51mwX8MU.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "Delhi University Introduces New UG Courses; Admissions Open!",
     slug: "Delhi_University_Introduces_New_UG_Courses;_Admissions_Open!",
@@ -34,7 +35,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "JEE Advanced 2025 Exam Dates Announced; Check Details!",
     slug: "JEE_Advanced_2025_Exam_Dates_Announced;_Check_Details!",
@@ -52,7 +54,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "CBSE Board Exams 2025 Schedule Released; Check Full Timetable!",
     slug: "CBSE_Board_Exams_2025_Schedule_Released;_Check_Full_Timetable!",
@@ -70,7 +73,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "Amity University Opens Admission for PhD Programs 2025",
     slug: "Amity_University_Opens_Admission_for_PhD_Programs_2025",
@@ -88,7 +92,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "NITs Announce Revised Fee Structures for 2025",
     slug: "NITs_Announce_Revised_Fee_Structures_for_2025",
@@ -107,7 +112,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "fee_structure",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "AICTE Introduces New Guidelines for Engineering Courses 2025",
     slug: "AICTE_Introduces_New_Guidelines_for_Engineering_Courses_2025",
@@ -125,7 +131,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "college",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "JNU Launches New Research Scholarships for 2025",
     slug: "JNU_Launches_New_Research_Scholarships_for_2025",
@@ -143,7 +150,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "GATE 2025 Application Process Now Live; Register Today!",
     slug: "GATE_2025_Application_Process_Now_Live;_Register_Today!",
@@ -161,7 +169,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "NEET UG 2025 Exam Dates Announced; Check Eligibility Criteria!",
     slug: "NEET_UG_2025_Exam_Dates_Announced;_Check_Eligibility_Criteria!",
@@ -179,7 +188,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "BITS Pilani Expands International Programs for 2025 Admissions",
     slug: "BITS_Pilani_Expands_International_Programs_for_2025_Admissions",
@@ -197,7 +207,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed4-QE18sVS20qSvUzTReBVmYBgUPdkSZB.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "IGNOU Opens Admission for Distance Learning Programs 2025",
     slug: "IGNOU_Opens_Admission_for_Distance_Learning_Programs_2025",
@@ -215,7 +226,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "SRM University Announces Early-Bird Discounts on Fees 2025",
     slug: "SRM_University_Announces_Early_Bird_Discounts_on_Fees_2025",
@@ -233,7 +245,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "fee_structure",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "VIT Vellore Admission 2025: Check Eligibility and Apply Now!",
     slug: "VIT_Vellore_Admission_2025;_Check_Eligibility_and_Apply_Now!",
@@ -251,7 +264,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "UPSC Exam Calendar 2025 Released; Check Important Dates!",
     slug: "UPSC_Exam_Calendar_2025_Released;_Check_Important_Dates!",
@@ -269,7 +283,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed4-QE18sVS20qSvUzTReBVmYBgUPdkSZB.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "Christ University Opens Admission for UG Programs 2025",
     slug: "Christ_University_Opens_Admission_for_UG_Programs_2025",
@@ -287,7 +302,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "AIIMS MBBS Entrance Exam 2025: Registration Begins Today!",
     slug: "AIIMS_MBBS_Entrance_Exam_2025;_Registration_Begins_Today!",
@@ -305,7 +321,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "IIT Madras Offers New Online Programs for 2025",
     slug: "IIT_Madras_Offers_New_Online_Programs_for_2025",
@@ -324,7 +341,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "college",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "XLRI Jamshedpur Opens Admission for Executive MBA 2025",
     slug: "XLRI_Jamshedpur_Opens_Admission_for_Executive_MBA_2025",
@@ -342,7 +360,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "ICSE Board Exam 2025 Schedule Released; Download Now!",
     slug: "ICSE_Board_Exam_2025_Schedule_Released;_Download_Now!",
@@ -360,7 +379,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed4-QE18sVS20qSvUzTReBVmYBgUPdkSZB.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "ISB Hyderabad Introduces New Specialized MBA Programs 2025",
     slug: "ISB_Hyderabad_Introduces_New_Specialized_MBA_Programs_2025",
@@ -378,7 +398,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed2-zbSSzmHqo9nsoQCZ1QBfBKuU1a5HMI.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "Manipal University Announces UG Scholarship Program 2025",
     slug: "Manipal_University_Announces_UG_Scholarship_Program_2025",
@@ -396,7 +417,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "UPSEE 2025 Exam Dates Announced; Register Online!",
     slug: "UPSEE_2025_Exam_Dates_Announced;_Register_Online!",
@@ -414,7 +436,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "exam",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed4-QE18sVS20qSvUzTReBVmYBgUPdkSZB.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "Jamia Millia Islamia Launches New Law Courses for 2025",
     slug: "Jamia_Millia_Islamia_Launches_New_Law_Courses_for_2025",
@@ -432,7 +455,8 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "college",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed3-t4h3HWCeuyJx6V8RFMhdS6PAMwuobN.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
   {
     title: "TISS Mumbai Opens Admission for Social Work Programs 2025",
     slug: "TISS_Mumbai_Opens_Admission_for_Social_Work_Programs_2025",
@@ -451,5 +475,6 @@ Donec efficitur, orci a tempus tincidunt, quam erat tincidunt justo, eu tincidun
     type: "admission",
     imageURL:
       "https://0ivjzaofksjyombd.public.blob.vercel-storage.com/feed1-2ryjD09ilZTnpbC9lUDPmcWWkLJNSG.png",
-  },
+      createdAt:new Date("2025-01-24T03:16:48.280Z")
+},
 ];

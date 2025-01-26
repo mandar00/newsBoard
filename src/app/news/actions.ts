@@ -1,14 +1,16 @@
 'use server'
-import prisma from "@/lib/prisma";
+import { placeHolderNews } from "@/data/placeholderNews";
+import { NewsConfig } from "@/types";
 import { cache } from "react";
 
 
-export const fetchNews = cache(async (type: string = "") => {
 
+export const fetchNews = cache(async (type: string = "") => {
+  if(type === "") return placeHolderNews
   // TODO implement cache
   try {
-    const news = await prisma?.news.findMany({
-      where: type !== "" ? { type } : {}
+    const news = placeHolderNews.filter((newsItem:NewsConfig)=>{
+      return newsItem.type === type
     })
     return news
   } catch (error) {
@@ -19,24 +21,17 @@ export const fetchNews = cache(async (type: string = "") => {
 })
 
 
-export const getNewsByTitle = cache(async (query: string) => {
-  const searchString = query
+export const getNewsByTitle = cache(async(query: string) => {
+  const searchArray = query
     ?.split(" ")
     .filter((word) => word.length > 0)
-    .join(" & ");
 
-    const news = await prisma.news.findMany({
-      where: {
-        title: {
-          search: searchString,
-          mode: 'insensitive'
-        }
-      },
-      select:{
-        title:true,
-        slug:true
-      }
-    });
+  const news = placeHolderNews.map((newsItem: NewsConfig) => {
+    if (searchArray.some(str => newsItem.title.toLowerCase().includes(str.toLowerCase()))) {
+      return { title: newsItem.title, slug: newsItem.slug }
+    }
+  }
+  );
 
-    return news
+  return news
 })

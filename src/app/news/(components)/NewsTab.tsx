@@ -1,7 +1,8 @@
 "use client";
+
 import { tabSectionMenu } from "../constants";
 import Tabs from "@/components/clientComponents/Tabs/Tabs";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { fetchNews } from "../actions";
 import Card from "@/components/serverComponents/Card/Card";
 import { truncateString } from "@/utils/stringUtils";
@@ -12,9 +13,11 @@ import Link from "next/link";
 import { NewsConfig } from "@/types";
 
 const NewsTab = () => {
-  const [tabsSectionData, setTabsSectionData] = useState<NewsConfig[] | undefined>(
-    []
-  );
+  const [tabsSectionData, setTabsSectionData] = useState<
+    NewsConfig[] | undefined
+  >([]);
+
+  const initalLoad = useRef(false);
   const [loading, setLoading] = useState(false);
 
   const getNews = async (type: string = "") => {
@@ -31,14 +34,16 @@ const NewsTab = () => {
 
   useEffect(() => {
     getNews();
+    initalLoad.current = false;
   }, []);
 
   return (
     <>
-      {tabsSectionData && tabsSectionData.length === 0 && loading && (
-        <Loader2 className="animate-spin m-auto w-[5vw]" />
-      )}
-      {tabsSectionData && tabsSectionData.length > 0 && (
+      {initalLoad.current &&
+        tabsSectionData &&
+        tabsSectionData.length === 0 &&
+        loading && <Loader2 className="animate-spin m-auto w-[5vw]" />}
+      {tabsSectionData && (
         <Tabs
           tabSectionMenu={tabSectionMenu}
           className="w-[100%] lg:w-[60%] md:w-[75%] mx-auto flex items-center justify-evenly bg-white rounded-[16px] shadow-md font-medium  

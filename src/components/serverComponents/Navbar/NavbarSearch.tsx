@@ -4,12 +4,12 @@ import Image from "next/image";
 import searchIcon from "@/assets/searchIcon.svg";
 import { useModal } from "@/hooks/useModal";
 import { useEffect, useState } from "react";
-import { getNewsByTitle } from "@/app/news/actions";
 import Modal from "react-modal";
 import { cn } from "@/lib/utils";
 import debounce from "lodash/debounce";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
+import { getNewsByTitle } from "@/app/news/actions";
 
 interface InputWithStartIconProps {
   handleInput?: (input: string) => void;
@@ -20,7 +20,7 @@ interface InputWithStartIconProps {
 const InputWithStartIcon = ({
   handleInput,
   inputValue,
-  inputClassName
+  inputClassName,
 }: InputWithStartIconProps) => {
   return (
     <>
@@ -32,7 +32,10 @@ const InputWithStartIcon = ({
         height={20}
       />
       <Input
-        className={cn("hidden focus-visible:ring-0 border-none shadow-none lg:placeholder:text-[14px] md:placeholder:text-[12px]  md:flex",inputClassName)}
+        className={cn(
+          "hidden focus-visible:ring-0 border-none shadow-none lg:placeholder:text-[14px] md:placeholder:text-[12px]  md:flex",
+          inputClassName
+        )}
         id="q"
         name="q"
         placeholder="Search for Colleges Exams Courses and More..."
@@ -46,7 +49,15 @@ const InputWithStartIcon = ({
 const NavbarSearch = () => {
   const { isOpen, toggleModal } = useModal();
   const [inputValue, setInputValue] = useState("");
-  const [results, setResults] = useState<{ title: string; slug: string }[]>([]);
+  const [results, setResults] = useState<
+    (
+      | {
+          title: string;
+          slug: string;
+        }
+      | undefined
+    )[]
+  >();
   const [loading, setLoading] = useState(false);
 
   const handleInput = async (query: string) => {
@@ -66,7 +77,7 @@ const NavbarSearch = () => {
   }, 500);
 
   useEffect(() => {
-    if(inputValue !== ""){
+    if (inputValue !== "") {
       fetchNews(inputValue);
       return () => fetchNews.cancel();
     }
@@ -106,19 +117,19 @@ const NavbarSearch = () => {
           <Loader2 className={cn("animate-spin m-auto w-[5vw]")} />
         ) : (
           <div className="flex flex-col h-full overflow-y-auto no-scrollbar mt-3">
-            {results.map((result, resultIndex) => {
+            {results?.map((result, resultIndex) => {
               return (
                 <Link
                   key={resultIndex}
-                  href={`/news/${result.slug}`}
-                  id={result.slug}
+                  href={`/news/${result?.slug}`}
+                  id={result?.slug}
                   onClick={toggleModal}
                   className={cn(
                     "px-5 py-2 border-b-2",
                     resultIndex % 2 === 0 ? "bg-muted" : "bg-white"
                   )}
                 >
-                  {result.title}
+                  {result?.title}
                 </Link>
               );
             })}
